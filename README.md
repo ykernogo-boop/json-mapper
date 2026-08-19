@@ -5,7 +5,7 @@ JSON Mapper is a browser-based tool that auto-generates transformation maps just
 
 **Try it here:** https://jsonmapper.a7soft.com
 
-**Tutorial video:** https://streamable.com/qkr8s8
+**Tutorial video:** https://www.youtube.com/watch?v=F0Ddd1ONPE8
 
 ---
 

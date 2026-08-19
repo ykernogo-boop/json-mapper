@@ -29,6 +29,12 @@ JSON Mapper uses a simple `source -> target` syntax to handle everything from fl
 If you have a product catalog and need to change the structure for a new API, the tool generates a map like this:
 
 ```text
-catalog.categories[*].id -> catalog[*].short_name
-catalog.categories[*].products[0].currency -> catalog[*].price_currency
-catalog.categories[*].products[*].name -> catalog[*].products[*].name
+store_name -> products[*].provider
+inventories[*].category -> products[*].cname
+inventories[*].items[*].sku -> products[*].product_id
+inventories[*].items[*].details.model -> products[*].name
+inventories[*].items[*].details.cost -> products[*].price
+inventories[*].items[*].currency -> products[*].price_currency
+inventories[*].items[*].tags[0] -> products[*].type
+inventories[*].items[*].tags[1] -> products[*].labels
+last_updated -> sync_date
